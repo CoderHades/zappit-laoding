@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Selector</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border: 2px solid #780024;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Coupon Buttons */
+        .coupon-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+
+        .coupon-button {
+            margin: 5px;
+            padding: 15px 30px;
+            background-color: #3c3c41;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .coupon-button:hover {
+            background-color: #780024;
+            transform: scale(1.05);
+        }
+
+        /* Individual Coupon Styles */
+        /* (Same as before excluding Colgate and Sanex) */
+
+        /* Coupon Content */
+        #coupon-content {
+            margin-top: 20px;
+            display: none;
+        }
+
+        #coupon-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #coupon-content p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Custom Fonts */
+        @font-face {
+            font-family: 'Courier New';
+            src: url('https://fonts.googleapis.com/css2?family=Courier+New&display=swap');
+        }
+
+        /* Logo */
+        .logo {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            color: #780024;
+            margin-bottom: 10px;
+            background-image: url('https://media.discordapp.net/attachments/1182729195693015081/1195131321337511996/ZInR8USACBABIkAEiAAR8CkBEn4XTgaNhEgAkSACBABIkAEkiXwX7kELTCcLhkdAAAAAElFTkSuQmCC.png?ex=65b2dfc7&is=65a06ac7&hm=63d286e31f6044ff041a347f9e1215213e2c800b751c59345093342378bc7385&=&format=webp&quality=lossless&width=797&height=312');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 200px;
+            height: 100px;
+        }
+
+        /* Discord Login Button */
+        .discord-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #7289da;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .discord-button:hover {
+            background-color: #677bc4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <!-- <img src="https://media.discordapp.net/attachments/1182729195693015081/1195128613574553630/image.png?ex=65b2dd41&is=65a06841&hm=741b0a8002a5f3a7a9a76daef1d4534bfa9563602fa4426d24d53f75dc668bc0&=&format=webp&quality=lossless&width=638&height=250" alt="Logo"> -->
+    </div>
+
+    <div class="container">
+        <div class="coupon-buttons">
+            <button class="coupon-button flash-coupon" id="flash-button">Flash</button>
+            <button class="coupon-button pampers-coupon" id="pampers-button">Pampers</button>
+            <button class="coupon-button seven-up-coupon" id="seven-up-button">7UP</button>
+            <button class="coupon-button comfort-coupon" id="comfort-button">Comfort</button>
+            <button class="coupon-button jimmys-coupon" id="jimmys-button">Jimmys</button>
+            <button class="coupon-button costa-coupon" id="costa-button">Costa</button>
+            <button class="coupon-button pot-noodles-coupon" id="pot-noodles-button">Pot Noodles</button>
+            <button class="coupon-button walls-coupon" id="walls-button">Walls</button>
+            <button class="coupon-button persil-coupon" id="persil-button">Persil</button>
+            <button class="coupon-button organix-coupon" id="organix-button">Organix</button>
+            <button class="coupon-button thatchers-coupon" id="thatchers-button">Thatchers</button>
+        </div>
+
+        <div id="coupon-content">
+            <!-- Coupon content will be displayed here when a button is clicked -->
+        </div>
+
+        <button class="discord-button">Discord Login</button>
+    </div>
+
+    <script>
+        // (Same as before excluding Colgate and Sanex)
+    </script>
+</body>
+
+</html>
