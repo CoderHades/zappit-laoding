@@ -123,28 +123,95 @@
 
     <div class="container">
         <div class="coupon-buttons">
-            <button class="coupon-button flash-coupon" id="flash-button">Flash</button>
-            <button class="coupon-button pampers-coupon" id="pampers-button">Pampers</button>
-            <button class="coupon-button seven-up-coupon" id="seven-up-button">7UP</button>
-            <button class="coupon-button comfort-coupon" id="comfort-button">Comfort</button>
-            <button class="coupon-button jimmys-coupon" id="jimmys-button">Jimmys</button>
-            <button class="coupon-button costa-coupon" id="costa-button">Costa</button>
-            <button class="coupon-button pot-noodles-coupon" id="pot-noodles-button">Pot Noodles</button>
-            <button class="coupon-button walls-coupon" id="walls-button">Walls</button>
-            <button class="coupon-button persil-coupon" id="persil-button">Persil</button>
-            <button class="coupon-button organix-coupon" id="organix-button">Organix</button>
-            <button class="coupon-button thatchers-coupon" id="thatchers-button">Thatchers</button>
+            <button class="coupon-button flash-coupon" id="flash-button" onclick="window.location.href='https://flash.zptr.co.uk'">Flash</button>
+            <button class="coupon-button pampers-coupon" id="pampers-button" onclick="window.location.href='https://pampers.zptr.co.uk'">Pampers</button>
+            <button class="coupon-button seven-up-coupon" id="seven-up-button" onclick="window.location.href='https://7up.zptr.co.uk'">7UP</button>
+            <button class="coupon-button comfort-coupon" id="comfort-button" onclick="window.location.href='https://comfort.zptr.co.uk'">Comfort</button>
+            <button class="coupon-button jimmys-coupon" id="jimmys-button" onclick="window.location.href='https://jimmy.zptr.co.uk'">Jimmys</button>
+            <button class="coupon-button costa-coupon" id="costa-button" onclick="window.location.href='https://costa.zptr.co.uk'">Costa</button>
+            <button class="coupon-button pot-noodles-coupon" id="pot-noodles-button" onclick="window.location.href='https://potnoodle.zptr.co.uk'">Pot Noodles</button>
+            <button class="coupon-button walls-coupon" id="walls-button" onclick="window.location.href='https://walls.zptr.co.uk'">Walls</button>
+            <button class="coupon-button persil-coupon" id="persil-button" onclick="window.location.href='https://persil.zptr.co.uk'">Persil</button>
+            <button class="coupon-button organix-coupon" id="organix-button" onclick="window.location.href='https://organix.zptr.co.uk'">Organix</button>
+            <button class="coupon-button thatchers-coupon" id="thatchers-button" onclick="window.location.href='https://thatchers.zptr.co.uk'">Thatchers</button>
         </div>
 
         <div id="coupon-content">
             <!-- Coupon content will be displayed here when a button is clicked -->
         </div>
 
-        <button class="discord-button">Discord Login</button>
+        <button class="discord-button" onclick="window.location.href='https://login.zptr.co.uk'">Discord Login</button>
     </div>
 
     <script>
-        // (Same as before excluding Colgate and Sanex)
+        const flashButton = document.getElementById('flash-button');
+        const pampersButton = document.getElementById('pampers-button');
+        const sevenUpButton = document.getElementById('seven-up-button');
+        const comfortButton = document.getElementById('comfort-button');
+        const jimmysButton = document.getElementById('jimmys-button');
+        const costaButton = document.getElementById('costa-button');
+        const potNoodlesButton = document.getElementById('pot-noodles-button');
+        const wallsButton = document.getElementById('walls-button');
+        const persilButton = document.getElementById('persil-button');
+        const organixButton = document.getElementById('organix-button');
+        const thatchersButton = document.getElementById('thatchers-button');
+
+        const couponContent = document.getElementById('coupon-content');
+
+        flashButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Flash Coupon Content</h2><p>This is the content of the Flash coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        pampersButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Pampers Coupon Content</h2><p>This is the content of the Pampers coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        sevenUpButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>7UP Coupon Content</h2><p>This is the content of the 7UP coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        comfortButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Comfort Coupon Content</h2><p>This is the content of the Comfort coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        jimmysButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Jimmys Coupon Content</h2><p>This is the content of the Jimmys coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        costaButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Costa Coupon Content</h2><p>This is the content of the Costa coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        potNoodlesButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Pot Noodles Coupon Content</h2><p>This is the content of the Pot Noodles coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        wallsButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Walls Coupon Content</h2><p>This is the content of the Walls coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        persilButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Persil Coupon Content</h2><p>This is the content of the Persil coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        organixButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Organix Coupon Content</h2><p>This is the content of the Organix coupon.</p>';
+            couponContent.style.display = 'block';
+        });
+
+        thatchersButton.addEventListener('click', () => {
+            couponContent.innerHTML = '<h2>Thatchers Coupon Content</h2><p>This is the content of the Thatchers coupon.</p>';
+            couponContent.style.display = 'block';
+        });
     </script>
 </body>
 
